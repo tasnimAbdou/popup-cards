@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>landing page</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <div class="container">
+        <h1>Image Gallary</h1>
+        <div class="imgContainer" onmouseover="stopTransition()" onmouseleave="slider()">
+            <button class="w3-button w3-display-left" onclick="prev(-1)">&#10094;</button>
+            <div class="img"><img src="./img/blog-1.jpg"></div>
+            <div class="img"><img src="./img/blog-2.jpg"></div>
+            <div class="img"><img src="./img/blog-3.jpg"></div>
+            <div class="img"><img src="./img/blog-4.jpg"></div>
+            <div class="img"><img src="./img/blog-5.jpg"></div>
+            <div class="img"><img src="./img/blog-6.jpg"></div>
+            <div class="img"><img src="./img/blog-8.jpg"></div>
+            <div class="img"><img src="./img/blog-9.jpg"></div>
+
+            <button class="w3-button w3-display-right" onclick="prev(+1)">&#10095;</button>
+
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="selectSlide(1)"></div>
+            <div class="dot" onclick="selectSlide(2)"></div>
+            <div class="dot" onclick="selectSlide(3)"></div>
+            <div class="dot" onclick="selectSlide(4)"></div>
+            <div class="dot" onclick="selectSlide(5)"></div>
+            <div class="dot" onclick="selectSlide(6)"></div>
+            <div class="dot" onclick="selectSlide(7)"></div>
+            <div class="dot" onclick="selectSlide(8)"></div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+<footer>
+
+</footer>

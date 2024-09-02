@@ -1,0 +1,116 @@
+body {
+    background-color: rgb(83, 78, 78);
+    height: 700px;
+    width: 1024px;
+
+}
+
+.container {
+    width: 1000px;
+    height: 650px;
+    background-color: rgb(92, 94, 95);
+    margin: 20px auto;
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+img {
+    width: 600px;
+    height: 400px;
+    position: relative;
+
+    animation-name: trans;
+    animation-duration: 4s;
+}
+
+.img {
+    width: 1000px;
+    height: 500px;
+    position: relative;
+
+}
+
+@keyframes trans {
+    0% {
+        opacity: .4;
+        left: -900px;
+        border-radius: 30%;
+        height: 100px;
+        top: 20%;
+    }
+
+    25% {
+        opacity: 1;
+        border-radius: 0;
+        top: 0px;
+        width: 900px;
+        height: 500px;
+        left: 0px;
+
+    }
+
+    50% {
+        opacity: 1;
+        border-radius: 0;
+        top: 0px;
+        width: 900px;
+        height: 500px;
+        left: 0px;
+
+    }
+
+    100% {
+        opacity: .4;
+        top: 20%;
+        height: 300px;
+        border-radius: 20%;
+        left: 300px;
+
+    }
+
+}
+
+.imgContainer {
+    width: 1000px;
+    height: 500px;
+    padding: 1px;
+    margin: 1px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    background-color: grey;
+    height: 50px;
+    width: 50px;
+}
+
+.dots {
+    height: 30px;
+    padding: 5px;
+    margin: 1px auto;
+
+}
+
+.dot {
+    background-color: gray;
+    height: 20px;
+    margin: 5px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot:hover {
+    background-color: black;
+    height: 23px;
+    width: 23px;
+
+}
+
+.active {
+    background-color: rgb(12, 12, 12);
+}
